@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML연습</title>
+    <style>
+    header {
+        background-color: DodgerBlue;
+        color: white;
+        text-align: center;
+        padding: 15px;
+    }
+
+    nav {
+        background-color: #E6E6FA;
+        text-align: center;
+        padding: 10px;
+    }
+
+    nav a {
+        margin: 0px 10px;
+    }
+
+    
+
+    .orange-border{
+        border: 1px solid Tomato;
+        border-left: 10px solid Tomato;
+        padding: 15px 10px;
+    }
+
+    .black-border{
+        border: 1px solid black;
+        border-left: 10px solid black;
+        padding: 15px 10px;
+    }
+
+    li{
+        margin-bottom: 5px;
+    }
+
+    .intro{
+        color: Green;
+    }
+
+    footer{
+        background-color: DodgerBlue;
+        color:white;
+        text-align: center;
+        padding:1px;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>이준혁</h1>
+    </header>
+
+    <nav>
+        <a href="#person">[개인정보]</a>
+        <a href="#edu">[학력사항]</a>
+        <a href="#lis">[자격사항]</a>
+        <a href="#spr">[자기소개]</a>
+    </nav>
+
+    <section>
+        <h2 class="orange-border" id="person">개인정보</h2>
+        <img src="../HW2/img/my_photo.jpg" alt="Profile photo of Junhyuk Lee" width="20%">
+
+        <ul>
+            <li>이준혁</li>
+            <li>010-xxxx-9592</li>
+            <li>wg0901@pusan.ac.kr</li>
+            <li>부산광역시 사상구 xxx</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2 class="black-border" id="edu">학력사항</h2>
+        <ul>
+            <li>
+                <img src="../HW2/img/PNU.jpeg" alt="PNU LOGO" width="20">
+                <a href="https://www.pusan.ac.kr/kor" target="_blank">부산대학교 재학</a>
+            </li>
+            
+            <li>
+                <img src="../HW2/img/sungdo.jpeg" alt="Sundo LOGO" width="20">
+                <a href="https://school.busanedu.net/sungdo-h" target="_blank">성도고등학교 졸업</a>
+            </li>
+            
+            <li>
+                <img src="../HW2/img/silla.jpeg" alt="Silla LOGO" width="20">
+                <a href="https://school.busanedu.net/busansilla-m" target="_blank">신라중학교 졸업</a>
+            </li>
+
+            <li>
+                <img src="../HW2/img/deoksang.jpeg" alt="Deoksang LOGO" width="20">
+                <a href="https://school.busanedu.net/deoksang-e" target="_blank">덕상초등학교 졸업</a>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2 class="orange-border" id="lis">자격사항</h2>
+        <ul>
+            <li>ITQ 파워포인트 자격증 A급</li>
+            <li>ITQ 아래 한글 자격증 A급</li>
+            <li>ITQ 인터넷 자격증 A급</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2 class="black-border" id="spr">자기소개</h2>
+        <p><a href="../HW1/HW1.html" target="_blank">SWOT 분석</a></p>
+        <p class="intro">부산대학교 정보컴퓨터 공학부에 재학중인 이준혁입니다.</p>
+    </section>
+
+    <footer>
+        <p>&copy; Junhyeok Lee/wg0901@pusan.ac.kr</p>
+    </footer>
+</body>
+</html>
