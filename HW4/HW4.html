@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이준혁 자기소개</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        padding: 20px;
+        font-family: sans-serif;
+    }
+
+    header {
+        background-color: #235B65;
+        color: white;
+        padding: 20px;
+        overflow: hidden;
+    }
+
+    .header-img-container {
+        float: left;
+        width: 150px;
+        height: 150px;
+        background-color: white;
+        margin-right: 25px;
+        text-align: center;
+        line-height: 150px;
+    }
+
+    .header-img-container img {
+        max-width: 100%;
+        max-height: 100%;
+        vertical-align: middle;
+    }
+
+    .header-text-container {
+        float: left;
+    }
+
+    .header-text-container h1 {
+        font-size: 2.5em;
+        margin: 10px 0 5px 0;
+    }
+
+    .header-text-container h2 {
+        font-weight: normal;
+        margin: 0;
+        color: #E0F7FA;
+    }
+
+    nav {
+        background-color: #61B3C9;
+        padding: 5px 15px;
+        clear: both;
+    }
+
+    nav > a {
+        display: inline-block;
+        padding: 10px 15px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    nav > a:link {
+        color: white;
+    }
+
+    nav > a:visited {
+        color: #E0F7FA;
+    }
+
+    nav > a:hover {
+        background-color: white;
+        color: #61B3C9;
+    }
+
+    .main-container {
+        margin-top: 20px;
+        overflow: hidden;
+    }
+
+    section {
+        float: left;
+        width: 49%;
+        margin-bottom: 20px;
+        border: 1px solid #61B3C9;
+        padding: 15px;
+        min-height: 250px;
+    }
+
+    section:nth-child(even) {
+        float: right;
+    }
+
+    section h2 {
+        background-color: #235B65;
+        color: white;
+        margin: 0;
+        padding: 15px 20px;
+        font-size: 1.3em;
+    }
+
+    section a:link {
+        text-decoration: none;
+        color: blue;
+    }
+
+    section a:visited {
+        text-decoration: none;
+        color: darkblue;
+    }
+
+    section a:hover {
+        text-decoration: underline;
+    }
+
+    ul, ol {
+        padding-left: 50px;
+        margin-top: 20px;
+    }
+
+    li {
+        margin-bottom: 12px;
+    }
+
+    .info-list {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    .info-list li {
+        display: flex;
+        align-items: center;
+    }
+
+    .info-list .material-icons {
+        margin-right: 15px;
+        font-size: 22px;
+        color: black;
+    }
+
+    .intro-content {
+        padding: 10px 20px;
+    }
+
+    footer {
+        clear: both;
+        background-color: #E0E0E0;
+        color: #555;
+        padding: 15px 25px;
+        font-size: 0.9em;
+        border-top: 1px solid #CCC;
+    }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-img-container">
+            <img src="../HW2/img/my_photo.jpg" alt="이준혁 사진">
+        </div>
+        <div class="header-text-container">
+            <h1>Junhyeok Lee</h1>
+            <h2>이준혁</h2>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#person">[개인정보]</a>
+        <a href="#edu">[학력사항]</a>
+        <a href="#lis">[자격사항]</a>
+        <a href="#spr">[자기소개]</a>
+    </nav>
+
+    <div class="main-container">
+        <section>
+            <h2 class="section-title" id="person">개인정보</h2>
+            <ul class="info-list">
+                <li><i class="material-icons">phone</i> 010-xxxx-9592</li>
+                <li><i class="material-icons">email</i> wg0901@pusan.ac.kr</li>
+                <li><i class="material-icons">assignment</i> 부산광역시 사상구 xxx</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2 class="section-title" id="edu">학력사항</h2>
+            <ul>
+                <li><a href="https://www.pusan.ac.kr/kor" target="_blank">대학교 재학</a></li>
+                <li><a href="https://school.busanedu.net/sungdo-h" target="_blank">고등학교 졸업</a></li>
+                <li><a href="https://school.busanedu.net/busansilla-m" target="_blank">신라중학교 졸업</a></li>
+                <li><a href="https://school.busanedu.net/deoksang-e" target="_blank">초등학교 졸업</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2 class="section-title" id="lis">자격사항</h2>
+            <ol>
+                <li>ITQ 파워포인트 자격증 A급</li>
+                <li>ITQ 아래 한글 자격증 A급</li>
+                <li>ITQ 인터넷 자격증 A급</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2 class="section-title" id="spr">자기소개</h2>
+            <div class="intro-content">
+                <p><a href="../HW1/HW1.html" target="_blank">SWOT 분석</a></p>
+                <p>부산대학교 정보컴퓨터공학부에 재학중인 이준혁입니다.</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        &copy; Junhyeok Lee / 부산광역시 사상구 xxx
+    </footer>
+
+</body>
+</html>
