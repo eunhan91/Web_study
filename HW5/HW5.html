@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    .container {
+        width: 400px;
+        margin: 0 auto;
+    }
+
+    .header {
+        background-color: #47a000;
+        color: white;
+        text-align: center;
+        padding: 12px 8px;
+        border-radius: 12px;
+        font-size: 16px;
+    }
+
+    form > div {
+        margin-bottom: 14px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+        width: 100%;
+        padding: 6px;
+        margin-top: 5px;
+        border: 1px solid #999;
+    }
+
+    input[name="year"],
+    input[name="day"],
+    select[name="month"] {
+        width: 30%;
+    }
+
+    select[name="month"] {
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    .choice-box {
+        border: 1px solid #999;
+        padding: 6px 10px 6px 50px;
+        margin-top: 5px;
+    }
+
+    textarea {
+        height: 100px;
+        resize: vertical;
+    }
+
+    .btn-group {
+        display: flex;
+        gap: 16px;
+        margin-top: 18px;
+    }
+
+    .btn-group > input {
+        flex: 1;
+        background-color: #47a000;
+        color: white;
+        border: none;
+        padding: 8px;
+    }
+
+    .btn-group > input:hover {
+        background-color: #3f8f00;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+
+        <h3 class="header">개인 신청 자료</h3>
+
+
+    <form action="/action_page" method="post">
+
+    <div>
+        <label for="name">성명</label>
+        <br>
+        <input type="text" id="name" name="name" placeholder="성명 입력">
+    </div>
+
+    <div>
+        <label for="email">E-mail</label>
+        <br>
+        <input type="email" id="email" name="email" placeholder="Email 입력" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+    </div>
+
+    <div>
+        <label>생년월일</label>
+        <br>
+
+        <input type="text" name="year" placeholder="년">
+        
+        <select name="month">
+            <option value="1">1월</option>
+            <option value="2">2월</option>
+            <option value="3">3월</option>
+            <option value="4">4월</option>
+            <option value="5">5월</option>
+            <option value="6">6월</option>
+            <option value="7">7월</option>
+            <option value="8">8월</option>
+            <option value="9">9월</option>
+            <option value="10">10월</option>
+            <option value="11">11월</option>
+            <option value="12">12월</option>
+        </select>
+    
+        <input type="text" name="day" placeholder="일">
+    </div>
+
+    <div>
+    <label>성별</label>
+    <br>
+
+    <div class="choice-box">
+        <label for="male">남</label>
+        <input type="radio" id="male" name="gender" value="male">
+        
+        <label for="female">여</label>
+        <input type="radio" id="female" name="gender" value="female">
+        
+    </div>
+</div>
+
+    <div>
+    <label>관심분야</label>
+    <br>
+
+    <div class="choice-box">
+        <label for="C">C</label>
+        <input type="checkbox" id="C" name="interest" value="C">
+        
+        <label for="python">파이썬</label>
+        <input type="checkbox" id="python" name="interest" value="python">
+        
+        <label for="R">R</label>
+        <input type="checkbox" id="R" name="interest" value="R">
+        
+        <label for="java">Javascript</label>
+        <input type="checkbox" id="java" name="interest" value="java" checked>
+
+    </div>
+</div>
+    <div>
+        <label for="etc">기타</label>
+        <br>
+        <textarea name="etc" id="etc"></textarea>
+    </div>
+
+    <div class="btn-group">
+        <input type="submit" value="확인">
+        <input type="reset" value="취소">
+    </div>
+
+</form>
+</div>
+</body>
+</html>

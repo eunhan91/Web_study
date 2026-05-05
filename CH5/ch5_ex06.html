@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<body>
+    <form action="/action_page.php">
+        <!-- 1. label과 input 연결 -->
+        <label for="browser">Choose your browser from the list:</label>
+        <input list="browsers" name="browser" id="browser">
+
+        <!-- 2. datalist 정의 (id는 input의 list와 일치) -->
+        <datalist id="browsers">
+            <option value="Edge">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist>
+        
+        <input type="submit" value="제출">
+    </form>
+</body>
+</html>
