@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>기말 실기 060-2</title>
+
+    <style>
+        li {
+            width:260px;
+            height:32px;
+            text-align:center;
+            border:1px solid black;
+            margin-bottom:2px;
+        }
+    </style>
+
+    <script>
+        function addOrder(){
+            let pname=document.getElementById("product").value;
+            let num=parseInt(document.getElementById("quantity").value);
+            let expen=0;
+            const sum=0;
+            const i=0;
+
+            if(num<=1||document.getElementById("quantity").value==="")
+                alert("적절한 값을 입력하세요");
+
+            if (pname=="노트")
+                expen=num*2000;
+            else if(pname=="펜")
+                expen=num*1000;
+            else
+                expen=num*1500;
+
+            sum+=expen;
+
+            document.getElementById("orderList").li[i].innerHTML=pname+" - "+num+" - "+expen;
+            i+=1;
+            document.getElementById("totalBox").innerHTML="총 금액:"+sum+"원";
+
+        }
+
+        function clearOrder(){
+            document.getElementById("orderList").innerHTML="";
+            document.getElementById("total").innerHTML="총 금액: 0원";
+        }
+    </script>
+</head>
+<body>
+    <h2>간단한 주문 계산기</h2>
+    <select id="product">
+        <option value="note">노트</option>
+        <option value="pen">펜</option>
+        <option value="file">파일</option>
+    </select>
+    <input type="text" id="quantity" placeholder="수량">
+    <button onclick="addOrder()">추가</button>
+    <button onclick="clearOrders()">초기화</button>
+    <div id="totalBox">총 금액: 0원</div>
+    <ul id="orderList">
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</body>
+</html>
